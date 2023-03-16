@@ -1,0 +1,17 @@
+package susanaProyectos;
+
+
+
+public class test {
+
+	public static void main(String[] args) {
+		AulaDAO aula = new AulaDAO();
+		aula.addAula(new Aula(0,"Física", 50));
+		aula.updateAula(13, new Aula(0,"Física", 50));
+		aula.deleteAula(33);
+		System.out.println(aula.get());
+		System.out.println(aula.getById(1));
+		
+	}
+
+}
